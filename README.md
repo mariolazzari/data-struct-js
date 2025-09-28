@@ -256,3 +256,41 @@ Often used to create a copy of the tree or to serialize it.
 - Visit the root node.
 
 Useful for deleting or freeing nodes, because children are handled before the parent.
+
+## Queues
+
+### How to construct a queue
+
+- Linear data structure FIFO based
+- Enqueue: add element to the end
+- Dequeue: remove element from start
+
+```js
+export class Queue {
+  constructor() {
+    this.queue = [];
+  }
+
+  enqueue(element) {
+    this.queue.push(element);
+  }
+
+  dequeue() {
+    return this.queue.shift();
+  }
+
+  peek() {
+    return this.queue[0];
+  }
+}
+```
+
+### Practical uses for queues
+
+- Printer queue
+- Media player playlist
+- Documents
+
+## Stacks
+
+### How to construct stacks
